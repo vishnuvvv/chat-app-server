@@ -2,7 +2,7 @@ import express from  'express'
 
 const app = express();
 
-const port = 5000;
+const port = process.env.PORT;
 
 app.listen(port,()=>{
     console.log(`server is run on port ${port}`)
